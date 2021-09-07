@@ -36,13 +36,18 @@ export class ListsController{
       }
 
       deleteList(listId){
+        if(window.confirm('you sure')){
           listsService.deleteList(listId)
-          Swal.fire({
-            icon: 'success',
-            title: 'Your list has been deleted',
-            showConfirmButton: false,
-            timer: 1500
-          })
+        } {
+          
+        }
+          // listsService.deleteList(listId)
+          // Swal.fire({
+          //   icon: 'success',
+          //   title: 'Your list has been deleted',
+          //   showConfirmButton: false,
+          //   timer: 1500
+          // })
           }
           
       }

@@ -25,13 +25,18 @@ export class TasksController{
     
     }
     deleteTask(taskId){
+       if (window.confirm("you sure")){
         tasksService.deleteTask(taskId)
-        Swal.fire({
-            icon: 'success',
-            title: 'Your task has been deleted',
-            showConfirmButton: false,
-            timer: 1500
-          })
+       } {
+           
+       }
+        // Swal.fire({
+        //     icon: 'success',
+        //     title: 'Your task has been deleted',
+        //     showConfirmButton: false,
+        //     timer: 1500
+        // })
+        
     }
     markTask(taskId){
         // let countUp = (app.task.countUp +=1)
@@ -43,4 +48,3 @@ export class TasksController{
         tasksService.markTask(taskId)
     }
 }
-

@@ -17,12 +17,12 @@ class TasksService{
             ProxyState.tasks = ProxyState.tasks.filter(f => f.id !== taskId) 
           }
 
-        markTask(taskId){
-            console.log('task mark', taskId)
-            let markedTask = ProxyState.tasks.length
-            document.getElementById('markTask').innerHTML = markedTask
+        // markTask(taskId){
+        //     console.log('task mark', taskId)
+        //     let markedTask = ProxyState.tasks.length
+        //     document.getElementById('markTask').innerHTML = markedTask
 
-        }
+        // }
 
 }
 
