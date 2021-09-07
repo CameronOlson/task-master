@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>task-master</title>
+</head>
+
+<body class="bg-style">
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col"><h1>Task Master</div></h1>
+    </div>
+  </div>
+  <main>
+    <!-- <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col-12">
+          <div id="app"></div>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="row py-2">
+        <div class="col12">
+          <form onsubmit="app.listsController.createList()">
+          <label for="list-name" class="sr-only">List</label>
+          <input type="text" minlength="3" maxlength="15" required placeholder="Add List" name="name" id="list-name">
+          <div>Choose Color<input type="color" name="listColor" id="list-color"></div>
+          <button type="submit" class="btn btn-secondary">Add List</button>
+        </form>
+        </div>
+      </div>
+      <div class="row py-2" id="list">
+        <div class="col-4">
+          <div class="card">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
+
+
+
+
+
